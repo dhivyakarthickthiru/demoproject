@@ -15,5 +15,3 @@ mongoose.connect(MONGODB_URI)
 }).catch((err)=>{
     console.log('Error connection to Database:',err.message);
 });
-
-
