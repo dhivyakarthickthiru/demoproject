@@ -7,7 +7,7 @@ const errorRoute=require('./middlewares/errorRoute');
 const logger=require('./middlewares/logger');
 const companyRouter = require('./routes/companyRoutes');
 const jobRouter = require('./routes/jobRoutes');
- 
+const applicationRouter = require('./routes/applicationRoutes'); 
 
 
 const app=express();
@@ -21,7 +21,7 @@ app.use(logger);
 app.use('/api/v1/auth',authRouter);
 app.use('/api/v1/companies',companyRouter);
 app.use('/api/v1/jobs',jobRouter);
-
+app.use('/api/v1/applications', applicationRouter);
 
 
 
